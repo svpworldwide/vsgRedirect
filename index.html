@@ -1,27 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta http-equiv="refresh" content="0; url=https://www.singer.com/pages/viking-sewing-gallery">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Viking Sewing Gallery</title>
+    
     <script>
-        // List of allowed pages (if applicable)
-        const allowedPages = ["/", "/index.html", "/about", "/contact"];
-      
-        // If the current path is not in allowedPages, redirect to the target URL
-        if (!allowedPages.includes(window.location.pathname)) {
-          window.location.href = "https://www.singer.com/pages/viking-sewing-gallery";
+        // Redirect all pages (except the root) to the new URL
+        if (window.location.pathname !== "/" || window.location.pathname !== "/contact") {
+            window.location.replace("https://www.singer.com/pages/viking-sewing-gallery");
         }
-      </script>
-      
-    
+    </script>
 </head>
-
 <body>
-    
 </body>
-
 </html>
